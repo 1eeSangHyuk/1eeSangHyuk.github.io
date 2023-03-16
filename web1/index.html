@@ -31,10 +31,55 @@
     <!-- 문서 정보 등록 끝-->
     
     <!-- 기본 폰트 및 초기화 로딩 -->
-    
+    <!-- 웹용 폰트 : 응용프로그램 폰트 비교 가벼움. 웹용 폰트 타입 - .woff4, .eot -->
+    <!-- https://fonts.google.com/ -->
+    <!-- https://noonnu.cc/ -->
+    <!-- 응용프로그램 폰트 -->
+    <!-- https://www.dafont.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 : 안하면 브라우저마다 다르게 나옴 :: 크로스 브라우징 가능하게 함-->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <style>
+        /* 
+        {font-family: "1차폰트명", 2차폰트명, 3차폰트명;} 
+        3차 폰트는 기본폰트를 적용함.
+        기본 폰트 : 브라우저에서 기본적으로 제공하는 폰트.
+            sans-serif - 고딕계열, serif - 명조계열, cursive - 궁서계열, monospace - 가로세로 비율 1:1 폰트, fantasy - 심볼기호나 디자인폰트
+        
+        */
+        
+        * { margin: 0; padding: 0; } 
+        /* 통합속성 - 세부속성 순으로 작성 */
+        /*
+        -통합속성
+        상 우 좌 하 1 2 3 4
+        margin : 테두리의 바깥여백.
+        margin: 10px 20px - 상/하는 10px 좌/우 20px
+        margin: 10px auto - 상/하는 10px 좌/우 가운데정렬
+        margin: 10px 20px 30px 40px - 상10 우20 하30 좌40
+        padding : 테두리의 안쪽여백.
+        padding 도 margin 과 같음.
+        -세부속성
+        margin-top, margin-right, margin-bottom, margin-left
+        padding-top, padding-right, padding-bottom, padding-left
+
+        */
+        body { width: 100%; font-family: 'Noto Sans KR', sans-serif; } /*w100p*/
+        u1 { list-style: none;} /*목록 circle 제거*/
+        a { text-decoration: none; }
+        img { border: none; } /*익스플로러 이미지 외곽선 삭제*/ 
+        /* 위에 5개 박고 시작 */
+
+        
+        .pop { font-family: 'Poppins', sans-serif; }
+        /* 인라인 태그(input, a, span) : width, height, margin+padding height 적용 x <=> 블록방식 태그 */
+
+    </style>
 </head>
 <body>
-    <h1>Pulsar</h1>
-    <a href="https://1eeSangHyuk.github.io">메인 - https://1eeSangHyuk.github.io</a>
+
 </body>
 </html>
