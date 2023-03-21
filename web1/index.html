@@ -78,12 +78,32 @@
 
         .container { clear:both; width: 100%; }
         .hd { clear:both; width: 100%;}
-        .tnb { clear:both; width: 100%; height:40px; background-color: black;}
-        .tnb_wrap { clear:both; width: 1400px; margin: 0 auto; height: 25px;}
+        .tnb { clear:both; width: 100%; height:111px; background-color: black;}
+        .tnb_wrap { clear:both; width: 1325px; margin: 0 auto; height: 25px;}
+        .tnb_wrap li a:hover { color:blue; }
+        .tnb ul li a { color:#a5a5a5; font-size:0.8em; }
 
-        .right_tnb li { float: right; }
-        .right_tnb li a:hover { color:blue; }
+        .tnb_left { float: left; }
+        /* .left_tnb li { list-style: none; float: left;  line-height: 40px; } */
+        .tnb_left li a { margin-left: 14px; margin-top: 29px; display:block; background-image: url(./img/top_logo.png); width: 160px; height: 53px;
+        text-indent: 9999px; overflow: hidden;}
 
+        .tnb_right { float: right; }
+        .tnb_right li { list-style: none; float: left;  line-height: 40px; }
+        .tnb_right li:first-child::after { content: "|"; color:#a5a5a5; margin-left: 14px; margin-right: 14px; }
+        .tnb_right li:nth-child(2)::after { content: "|"; color:#a5a5a5; margin-left: 14px; margin-right: 14px; }
+        .tnb_right li:nth-child(3)::after { content: "|"; color:#a5a5a5; margin-left: 14px; margin-right: 14px; }
+        .tnb_right li:nth-child(4)::after { content: "|"; color:#a5a5a5; margin-left: 14px; margin-right: 14px; }
+
+        .gnb { clear:both; width: 100%; height: 72px; background-color:black;}
+        .gnb_wrap { clear:both; width: 1325px; margin: 0 auto; height: 25px; }
+        .gnb_wrap li a:hover { color:blue; }
+        .gnb ul li a { color:#fff; font-size:1.05em; }
+
+        .gnb_left { float: left; }
+        .gnb_left li { list-style: none; float: left; line-height: 60px;}
+        .gnb_left li { margin-left: 50px;  }
+        .gnb_left li:first-child { margin-left: 14px; }
     </style>
 </head>
 <body>
@@ -91,12 +111,25 @@
         <header class="hd">
             <nav class="tnb">
                 <div class="tnb_wrap">
-                    <ul class="right_tnb">
+                    <ul class="tnb_left">
+                        <li><a href="" class="title_img">Title</a></li>
+                    </ul>
+                    <ul class="tnb_right">
                         <li><a href="">로그인</a></li>
                         <li><a href="">회원가입</a></li>
                         <li><a href="">장바구니</a></li>
                         <li><a href="">주문조회</a></li>
                         <li><a href="">마이쇼핑</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="gnb">
+                <div class="gnb_wrap">
+                    <ul class="gnb_left">
+                        <li><a href="">product</a></li>
+                        <li><a href="">community</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">고객지원</a></li>
                     </ul>
                 </div>
             </nav>
@@ -108,21 +141,8 @@
 
         </footer>
     </div>
-    <div class="fixed_container">
-        <header class="hd">
-            <nav class="gnb">
-                <div>
-                    <gnb_wrap>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </gnb_wrap>
-                </div>
-            </nav>
-        </header>
+    <div class="fixed_area">
+
     </div>
 </body>
 </html>
