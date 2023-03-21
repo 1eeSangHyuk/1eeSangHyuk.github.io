@@ -73,13 +73,56 @@
         img { border: none; } /*익스플로러 이미지 외곽선 삭제*/ 
         /* 위에 5개 박고 시작 */
 
-        
         .pop { font-family: 'Poppins', sans-serif; }
         /* 인라인 태그(input, a, span) : width, height, margin+padding height 적용 x <=> 블록방식 태그 */
+
+        .container { clear:both; width: 100%; }
+        .hd { clear:both; width: 100%;}
+        .tnb { clear:both; width: 100%; height:40px; background-color: black;}
+        .tnb_wrap { clear:both; width: 1400px; margin: 0 auto; height: 25px;}
+
+        .right_tnb li { float: right; }
+        .right_tnb li a:hover { color:blue; }
 
     </style>
 </head>
 <body>
+    <div class="container">
+        <header class="hd">
+            <nav class="tnb">
+                <div class="tnb_wrap">
+                    <ul class="right_tnb">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">장바구니</a></li>
+                        <li><a href="">주문조회</a></li>
+                        <li><a href="">마이쇼핑</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
 
+        </div>
+        <footer class="ft">
+
+        </footer>
+    </div>
+    <div class="fixed_container">
+        <header class="hd">
+            <nav class="gnb">
+                <div>
+                    <gnb_wrap>
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </gnb_wrap>
+                </div>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
