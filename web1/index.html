@@ -93,6 +93,31 @@
         .grid_box li a.item6 { background-image: url(./img/Pulsar\ Gaming\ Gears\ paracontrol\ mouse\ pad.jpg);}
         .grid_box li a .grid_tit { display: block; line-height: 50vh; text-align: center; background-color: #ffffff00;}
 
+        
+        #page2 .tit_box { clear:both; padding-top: 80px; }
+        #page2 .page_wrap { clear: both; padding-top: 80px; width: 1440px; margin: 0 auto; text-align: center;}
+        .colm_fr, .lst { clear:both; } 
+        .lst li { float:left; width: 360px; height: 250px;
+        border-radius: 25px; box-sizing: border-box; padding: 28px; padding-left: 40; }
+
+
+        #page3 { background-color: #000; color:#fff; }
+        #page3 .tit_box { clear:both; padding-top:80px; width:1280px; margin: 0 auto; text-align:center; }
+        .more { display: block; position: absolute; top: 60px; right: 200px; font-size: 60px; font-weight: bold;
+        width: 80px; height: 80px; border: 1px solid #ccc; text-align: center; color: #999; }
+        .board_fr { clear:both; width: 1280px; margin: 0 auto; padding-top: 40px; }
+        .tbl { clear:both; border-collapse: collapse; }
+        .tbl tr { width: 1280px; }
+        .tbl th, td { min-height: 50px; padding-top: 20px; padding-bottom: 20px; border-top: 1px solid #000;} 
+        /* .tb1 */
+
+
+        .fix_area { position:fixed; z-index: 9999; bottom: 40px; right: 40px; background-color: #ffffff00;}
+        .fix_area .cir_box { display: block; width: 60px; height: 60px; text-align: center; 
+        border-radius: 35px; box-sizing: border-box; padding: 6px; font-size: 24px;
+        padding-top: 15px; overflow: hidden; color: #375cff; transition-duration: 0.5s; 
+        border: 3px #375cff solid;}
+
         </style>
         <!-- .sub 안뜨는거 + 한글정렬 -->
 </head>
@@ -200,13 +225,70 @@
             <section class="page" id="page2">
                 <h2 class="page_title">페이지제목2</h2>
                 <div class="page_wrap">
-
+                    <article class="colm_fr">
+                        <ul class="lst">
+                            <li class="item1">
+                                <h3 class="item_tit">마우스</h3>
+                            </li>
+                            <li class="item2">
+                                <h3 class="item_tit">키보드</h3>
+                            </li>
+                            <li class="item3">
+                                <h3 class="item_tit">마우스패드</h3>
+                            </li>
+                            <li class="item4">
+                                <h3 class="item_tit">악세서리</h3>
+                            </li>
+                        </ul>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page3">
                 <h2 class="page_title">페이지제목3</h2>
                 <div class="page_wrap">
-                    
+                    <div class="tit_box">
+                        <h3 class="sub_title">공지사항입니다.</h3>
+                        <h2 class="main_title">공지사항</h2>
+                    </div>
+                    <a href="" class="more">+</a>
+                    <article class="board_fr">
+                        <table class="tbl">
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <a href="">
+                                        <h3 class="td_com">1</h3>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <a href="">
+                                        <h3 class="td_com">2</h3>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <a href="">
+                                        <h3 class="td_com">3</h3>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">
+                                    <a href="">
+                                        <h3 class="td_com">4</h3>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
                 </div>
             </section>
         </div>
@@ -215,7 +297,7 @@
         </footer>
     </div>
     <div class="fix_area">
-
+        <a href="#" class="cir_box totop">↑</a>
     </div> 
 </body>
 </html>
