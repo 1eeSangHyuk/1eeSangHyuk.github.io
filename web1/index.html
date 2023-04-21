@@ -133,9 +133,17 @@
         #page0 .page_title { display: none; }
         
 
-        #ft { clear:both; }
-        #ft .row1 { clear: both; margin-top: 15px; margin-bottom: 15px; }
-        .ft_wrap { clear: both; width: 1500px; height: 400px; margin: 0 auto;}
+        .ft { clear:both; }
+        .ft .row1 { background-color: #000000; height: 410px; }
+        .ft .section {  color: #c2c2c2; font-size: 12px; line-height: 30px; padding: 10px;}
+        .ft .section:first-child { padding-top: 40px; }
+        .ft .section:last-child { padding-bottom: 40px; }
+        .ft .section p { color: #375cff; font-size: 15px;}
+        .ft .section .mt::after { content: '.'; }
+
+        .ft_wrap { clear: both; width: 1500px; }
+        .ft_wrap .right { float:right; }
+        .ft_wrap .left { float: left; }
 
         .fix_area { position:fixed; z-index: 9999; bottom: 40px; right: 40px; background-color: #ffffff00;}
         .fix_area .cir_box { display: block; width: 60px; height: 60px; text-align: center; 
@@ -329,58 +337,97 @@
         <footer class="ft">
             <article class="row row1">
                 <div class="ft_wrap">
-                    <div class="foot_left">
+                    <div class="question left">
                          
                     </div>
-                    <div class="foot_right">
+                    <div class="info right">
                         <div class="section company">
                             <p class="title">COMPANY INFO</p>
                             <span>
-                                COMPANY. 
-                                <em>주식회사에이플러스엑스&nbsp;&nbsp;</em>
+                                <b class="mt">COMPANY</b>
+                                주식회사에이플러스엑스
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                             <span>
-                                OWNER. 
-                                <em>심건희&nbsp;&nbsp;</em>
+                                <b class="mt">OWNER</b>
+                                심건희
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                             <span>
-                                PRIVACY MANAGER. 
-                                <em>황서윤(support@aplusx.gg)&nbsp;&nbsp;</em>
-                            </span>
-                            <br>
-                            <span>
-                                TEL. 
-                                <em>070-7797-7471&nbsp;&nbsp;</em>
-                            </span>
-                            <span>
-                                E-MAIL. 
-                                <em>support@pulsargg.kr&nbsp;&nbsp;</em>
-                            </span>
-                            <span>
-                                BUSINESS LICENSE. 
-                                <em>353-87-01791[사업자정보확인]</em>
+                                <b class="mt">PRIVACY MANAGER</b>
+                                황서윤(support@aplusx.gg)
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                             <br>
                             <span>
-                                MALL ORDER LICENSE. 
-                                <em>2022-용인기흥-1765&nbsp;&nbsp;</em>
+                                <b class="mt">TEL</b>
+                                070-7797-7471
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                             <span>
-                                ADDRESS. 
-                                <em>16976 경기도 용인시 기흥구 기흥로 58-1 (구갈동) 614호</em>
+                                <b class="mt">E-MAIL</b>
+                                support@pulsargg.kr
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">BUSINESS LICENSE</b>
+                                53-87-01791[사업자정보확인]
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <br>
+                            <span>
+                                <b class="mt">MALL ORDER LICENSE</b>
+                                2022-용인기흥-1765
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">ADDRESS</b>
+                                16976 경기도 용인시 기흥구 기흥로 58-1 (구갈동) 614호
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                         </div>
                         <div class="section bank">
                             <p class="title">BANK INFO</p>
                             <span>
-                                우리은행 
-                                <em>1005-804-275894&nbsp;&nbsp;</em>
+                                <b class="mt">우리은행</b>
+                                1005-804-275894
+                                &nbsp;&nbsp;&nbsp;
                             </span>
                             <br>
                             <span>
-                                예금주 
-                                <em>(주)에이플러스엑스&nbsp;&nbsp;</em>
+                                <b class="mt">예금주</b>
+                                (주)에이플러스엑스
+                                &nbsp;&nbsp;&nbsp;
                             </span>
+                        </div>
+                        <div class="section fnb">
+                            <span>
+                                <b><a href="">개인정보처리방침</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">이용약관</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">법적고지</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">이메일 무단수집 거부</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">온라인 제보</a></b>&nbsp;&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <!-- <select name="favo" id="favo" class="section fnb" onchange="favo(this)">
+                            <option value="">FAMILY SITE</option>
+                            <option value="http://www.cj.net/">CJ주식회사</option>
+                            <option value="http://www.cj.co.kr/">CJ제일제당</option>
+                            <option value="https://www.cj.co.kr/kr/about/business/bio">CJ바이오</option>
+                            <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option>
+                            <option value="https://www.cjenm.com/ko/">CJ ENM</option>
+                            <option value="http://corp.cgv.co.kr/">CJ CGV</option>
+                        </select>
+                        <script>
+                        function favo(s){
+                            var hs = s.value;
+                            if(hs!=""){
+                                window.open(hs, "팝업");
+                            }
+                        }    
+                        </script> -->
+                        <div class="section slogan">
+                            COPYRIGHT © 주식회사에이플러스엑스 ALL RIGHTS RESERVED.<br>
                         </div>
                     </div>
                 </div>
