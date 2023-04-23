@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 메인 스타일 */
+.main { clear:both; width: 100%; height:72px; background-color: #0000007c; }
+.main_wrap { width: 1325px; margin: 0 auto; position:relative; }
+
+/* 초기화 스타일 */
+* { margin: 0; padding: 0; }
+body, html { width: 100%; font-family: 'Noto Sans KR', sans-serif;  }    
+ul { list-style:none; }
+a { text-decoration: none; }
+img { border: none; }
+.pop { font-family: 'Poppins', sans-serif, cursive; }
+
+/* 헤더 스타일 */
+.logo { display:block; width: 160px; height:53px; overflow:hidden;
+    position:absolute; top:45px; left: 0; z-index:10;   }
+.logo img { display:block; width: 100%; height:auto; }
+
+.gnb { position:relative; }
+.gnb > ul { width:800px;  height:72px;  margin: 0 auto; float: left; }
+.gnb > ul > li { float:left; width: 150px; text-align: left; line-height: 72px; }
+.gnb > ul > li > a { display:block; font-size:1.0em; color:#fff; font-weight: bold; }
+.gnb > ul > li:hover > a { color:#0067CE; transition: 0.5s; }
+
+.sub { display:none; padding-top: 20px; width: 122px; height: 141px; }
+.gnb > ul > li:hover > .sub { display:block; padding-top: 0px; z-index: 20; background-color: #505050; }
+.gnb > ul > li:hover > .item1 { width: 600px; height: 370px; }
+.gnb > ul > li:hover > .item2 { width:400px; height: 300px; }
+.gnb > ul > li:hover > .item4 { width: 400px; height: 150px; }
+.sub > ul > li { width: 20%; }
+.sub > ul > li > a { display:block; color:#fff; font-size:1.1em; font-weight: 500; }
+.sub > ul > li:hover > a { color:#0067CE; transition: 0.3s ease-in; }
+.container { clear:both; width:100%; }
+.hd { clear:both; width: 100%; height: 200px; position: fixed; z-index: 999; background-color: #000000;}
+.tnb { clear:both; width: 100%; height:128px; background-color:#0000007c;}
+.tnb_wrap { clear:both;  width: 1325px; margin: 0 auto; height:25px; position: relative;}
+.left_tnb { float:right; }
+.left_tnb li { float:left; line-height: 40px; }
+.left_tnb li:first-child::after { content: "|"; color:#a5a5a5; margin-right: 14px; }
+.left_tnb li:nth-child(2)::after { content: "|"; color:#a5a5a5; margin-right: 14px; }
+.left_tnb li:nth-child(3)::after { content: "|"; color:#a5a5a5; margin-right: 14px; }
+.left_tnb li:nth-child(4)::after { content: "|"; color:#a5a5a5; margin-right: 14px; }
+.left_tnb li a { margin-right: 14px; }
+.left_tnb li a:hover { color:#fff; }
+.tnb ul li a { color:#a5a5a5; font-size: 0.75em; }

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>포트폴리오 - Pulsar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="hd">
+            <nav class="tnb">
+                <div class="tnb_wrap">
+                    <a href="" class="logo">
+                        <img src="./img/top_logo.png" alt="Pulsar_logo">
+                    </a>
+                    <ul class="left_tnb">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">장바구니</a></li>
+                        <li><a href="">주문조회</a></li>
+                        <li><a href="">마이쇼핑</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="main_wrap">
+                    <nav class="gnb">
+                        <ul class="gnb_fr">
+                            <li><a href="">PRODUCT</a>
+                                <div class="sub item1">
+                                    <ul class="dp2">
+                                        <li><a href="">게이밍 마우스</a></li>
+                                        <li><a href="">게이밍 키보드</a></li>
+                                        <li><a href="">마우스 패드</a></li>
+                                        <li><a href="">마우스 악세서리</a></li>
+                                        <li><a href="">슈퍼글라이드</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">COMMUNITY</a>
+                                <div class="sub item2">
+                                    <ul class="dp2">
+                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="">Review</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">1:1문의</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="">CONTACT</a></li>
+                            <li><a href="">고객지원</a>
+                                <div class="sub item4">
+                                    <ul class="dp2">
+                                        <li><a href="">다운로드</a></li>
+                                        <li><a href="">A/S신청</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+
+        </div>
+        <footer class="ft">
+            <article class="row row1">
+                <div class="ft_wrap">
+                    <div class="question left">
+                        <div class="section qna">
+                            <p class="title">고객문의</p>
+                        </div>
+                        <div class="section country">
+                            <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                                <option value="">한국</option>
+                                <option value="https://pulsar.gg">GLOBAL</option>
+                                <option value="https://pulsargg.eu">EU</option>
+                                <option value="https://pulsargg.jp">日本</option>
+                            </select>
+                            <script>
+                                function favo(s){
+                                    var hs = s.value;
+                                    if(hs!=""){
+                                        window.open(hs, "팝업");
+                                    }
+                                }    
+                                </script>
+                        </div>    
+                    </div>
+                    <div class="info right">
+                        <div class="section company">
+                            <p class="title">COMPANY INFO</p>
+                            <span>
+                                <b class="mt">COMPANY</b>
+                                주식회사에이플러스엑스
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">OWNER</b>
+                                심건희
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">PRIVACY MANAGER</b>
+                                황서윤(support@aplusx.gg)
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <br>
+                            <span>
+                                <b class="mt">TEL</b>
+                                070-7797-7471
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">E-MAIL</b>
+                                support@pulsargg.kr
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">BUSINESS LICENSE</b>
+                                53-87-01791[사업자정보확인]
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <br>
+                            <span>
+                                <b class="mt">MALL ORDER LICENSE</b>
+                                2022-용인기흥-1765
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <b class="mt">ADDRESS</b>
+                                16976 경기도 용인시 기흥구 기흥로 58-1 (구갈동) 614호
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <div class="section bank">
+                            <p class="title">BANK INFO</p>
+                            <span>
+                                <b class="mt">우리은행</b>
+                                1005-804-275894
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                            <br>
+                            <span>
+                                <b class="mt">예금주</b>
+                                (주)에이플러스엑스
+                                &nbsp;&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <div class="section fnb">
+                            <span>
+                                <b><a href="">회사소개</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">이용약관</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">Warranty</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">쇼핑몰이용안내</a></b>&nbsp;&nbsp;&nbsp;
+                                <b><a href="">개인정보취급방침</a></b>&nbsp;&nbsp;&nbsp;
+                            </span>
+                        </div>
+                        <div class="section slogan">
+                            COPYRIGHT © 주식회사에이플러스엑스 ALL RIGHTS RESERVED.<br>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="row row2">
+                
+            </article>
+        </footer>
+    </div>
+    <div class="fix_area">
+        <a href="#" class="cir_box totop">↑</a>
+    </div>
+</body>
+</html>
